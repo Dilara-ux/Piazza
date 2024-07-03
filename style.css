@@ -1,34 +1,85 @@
 body {
     background-color: #f3ede6;
+    font-family: "Playwrite GB S", cursive;
 }
 
 .logo > img {
-    width: 100px;
-    margin: 0 auto;
+    width: 150px;
+    display: block;
+
 }
 
 header {
     background-color: #648181;
     padding: 20px;
+    display: flex;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
 }
 
 .slogan {
     background-color: #bfcdcc;
     padding: 20px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .vorstellung_restaurant {
     background-color: #edc3ae;
+    padding: 80px;
+    margin: 20px 0;
 }
 
 .vorstellung_restaurant > img {
-    width: 500px;
+    width: 400px;
+    float: left;
 }
 
-a {
-    text-decoration: none;
+.vorstellung_restaurant > h2, p {
+    display: flex;
+    padding: 20px;
 }
 
-li {
-    list-style-type: none;
+.vorstellung_restaurant > p {
+    text-align: justify;
+    text-align-last: none;
+}
+
+.speisekarte > img {
+    width: 800px;
+}
+
+.speisekarte {
+    text-align: center;
+    background-color: #edc3ae;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.mittig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background-color: #f3edf3;
+    padding: 5px;
 }
