@@ -87,9 +87,26 @@ ul {
     padding: 5px;
 }
 
-form {
+.standort {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: #bfcdcc;
+    padding: 20px 0;
+}
+.standort > img {
+    width: 400px;
+}
+
+.text-standort {
+    padding: 20px;
+}
+
+.karte {
+    background-color: #bfcdcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
