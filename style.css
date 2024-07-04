@@ -145,14 +145,15 @@ ul {
 }
 
 .day {
-    border: 1px solid #ddd;
+    border: 1px solid #648181;
     padding: 0.5em;
     min-height: 80px;
     position: relative;
 }
 
 .event {
-    background-color: #ffcc00;
+    background-color: #648181;
+    color: #f3ede6;
     padding: 0.2em;
     border-radius: 5px;
     cursor: pointer;
@@ -160,8 +161,8 @@ ul {
 
 .event-details {
     display: none;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #648181;
+    border: 2px solid black;
     padding: 0.5em;
     position: absolute;
     top: 0;
@@ -224,4 +225,15 @@ button {
     display: flex;
     justify-content: center;
 
+}
+
+#events {
+    background-color: #edc3ae;
+    padding: 20px;
+}
+
+#events > h2 {
+    text-align: center;
+    background-color: #f3ede6;
+    padding: 5px;
 }
