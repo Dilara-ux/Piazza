@@ -11,9 +11,12 @@ body {
 
 header {
     background-color: #648181;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     margin: 20px 0;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 a {
@@ -26,7 +29,6 @@ a {
 li {
     list-style-type: none;
     display: inline-block;
-
 }
 
 ul {
