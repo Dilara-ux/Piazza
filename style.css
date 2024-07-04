@@ -113,4 +113,63 @@ ul {
 }
 
 
+#calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#month-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1em;
+}
+
+#days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    max-width: 600px;
+    gap: 1px;
+}
+
+.day {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    min-height: 80px;
+    position: relative;
+}
+
+.event {
+    background-color: #ffcc00;
+    padding: 0.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-details {
+    display: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.event:hover .event-details {
+    display: block;
+}
 
