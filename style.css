@@ -97,6 +97,7 @@ ul {
 }
 .standort > img {
     width: 400px;
+    padding: 20px;
 }
 
 .text-standort {
@@ -110,3 +111,6 @@ ul {
     align-items: center;
     padding: 20px;
 }
+
+
+
