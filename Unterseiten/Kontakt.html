@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript">
            (function(){
@@ -22,53 +23,54 @@
                 <li><a href="Kontakt.html">Kontakt</a></li>
             </ul>
         </header>
-    
-        <section id="reservation">
-            <h2>Tischreservierung</h2>
-            <form id="reservation-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="date">Datum:</label>
-                <input type="date" id="date" name="date" required>
-    
-                <label for="time">Zeit:</label>
-                <input type="time" id="time" name="time" required>
-    
-                <label for="guests">Anzahl der Gäste:</label>
-                <input type="number" id="guests" name="guests" required>
-    
-                <button type="submit">Reservieren</button>
-            </form>
-        </section>
-    
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <button type="submit">Senden</button>
-            </form>
-            <div class="address">
-                <p>Piazza Restaurant</p>
-                <p>Hundestrasse 1</p>
-                <p>12345 Tierstadt</p>
-            </div>
-        </section>
-    
+        <div class="Formulare">
+
+            <section id="reservation">
+                <h2>Tischreservierung</h2>
+                <form id="reservation-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="guests">Anzahl der Gäste:</label>
+                    <input type="number" id="guests" name="guests" required>
+
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date" name="date" required>
+        
+                    <label for="time">Zeit:</label>
+                    <input type="time" id="time" name="time" required>
+                
+                    <div class="button">
+                        <button type="submit">Reservieren</button>
+                    </div>
+                </form>
+            </section>
+        
+            <section id="contact">
+                <h2>Kontakt</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="button"></div>
+                        <button type="submit">Senden</button>
+                    </div>
+                </form>
+                <div class="address">
+                    <h3>Piazza Restaurant</h3>
+                    <p>Hundestrasse 1 <br>
+                    12345 Tierstadt</p>
+                </div>
+            </section>
+        </div>
         <script src="script.js"></script>
     </body>
     </html>
-    <script src="/Piazza/script.js" defer></script>
-</body>
-</html>

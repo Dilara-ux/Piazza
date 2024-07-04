@@ -173,3 +173,55 @@ ul {
     display: block;
 }
 
+#reservation {
+    background-color: #bfcdcc;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 60px;
+    margin: 20px;
+}
+
+input {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+
+#contact {
+    background-color: #edc3ae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    margin: 20px;
+}
+
+textarea {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+
+button {
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #648181;
+    color: #bfcdcc;
+}
+
+.address {
+    display: block;
+    text-align: center;
+    background-color: #648181;
+    padding: 20px;
+}
+
+.Formulare {
+    display: flex;
+    justify-content: center;
+
+}
