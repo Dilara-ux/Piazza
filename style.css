@@ -114,18 +114,19 @@ ul {
     padding: 20px;
 }
 
-
 #calendar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 #month-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; 
     margin-bottom: 1em;
 }
 
@@ -133,7 +134,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; 
     text-align: center;
     font-weight: bold;
 }
@@ -142,15 +143,20 @@ ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; 
     gap: 1px;
+    grid-auto-rows: minmax(120px, auto); 
 }
 
 .day {
     border: 1px solid #648181;
     padding: 0.5em;
-    min-height: 80px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em; 
 }
 
 .event {
@@ -159,6 +165,7 @@ ul {
     padding: 0.2em;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .event-details {
@@ -167,14 +174,28 @@ ul {
     border: 2px solid black;
     padding: 0.5em;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
+    width: 90%;
+    max-width: 300px;
+    max-height: 150px; /* Begrenzen der maximalen Höhe */
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-y: auto; /* Hinzufügen einer Scrollbar */
+    font-size: 0.8em; /* Verkleinern der Schriftgröße */
+}
+
+.event-details strong {
+    display: block;
+    text-align: center;
 }
 
 .event:hover .event-details {
     display: block;
 }
+
 
 #reservation {
     background-color: #bfcdcc;
